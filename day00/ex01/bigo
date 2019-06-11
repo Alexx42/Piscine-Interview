@@ -1,3 +1,7 @@
 TIME ->
 
-BEST: O(n) 
+BEST: O(nlog(n)) 
+WORST: O(n^2): Going through the elements twice because of bad distribution
+
+
+SPACE: O(log(n)) : because of the recursing calls

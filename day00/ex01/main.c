@@ -15,20 +15,22 @@ int main(void)
 	launch your test here
 	--------------------*/
 	sortArts(arts);
-	printArt(arts, 0, 150);
+	printArt(arts, 0, 94870);
 	return (0);
 }
 
 
 void printArt(struct s_art **art, int s, int e) {
-	for (int i = s; i < e; i++) {
+	for (int i = s; art[i] && i < e; i++) {
 		if (art[i + 1] && strcmp(art[i]->name, art[i + 1]->name) > 0) {
-			printf("ERROR\n");
+			printf("ERROR = |%s|\n", art[i]->name);
+			printf("ERROR  = |%s|\n", art[i + 1]->name);
 			exit(1);
 		} else {
 			printf("%s   =>   %d\n", art[i]->name, art[i]->price);
 		}
 	}
+	printf("Sort function worked.\n");
 }
 
 
