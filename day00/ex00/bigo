@@ -1,0 +1,2 @@
+Time : O(n) -> I'm looping through the number of elements one time.
+Space : O(1) -> Not using extra space
