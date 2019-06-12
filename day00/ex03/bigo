@@ -1,0 +1,2 @@
+TIME: O(1) -> where n is the number of elements in the linked list
+SPACE: O(n): -> where n is the number of entries
