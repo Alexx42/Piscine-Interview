@@ -45,7 +45,7 @@ char *precious(int *text, int size) {
 			}
 			res[idx++] = tmp->c;
 		} else {
-			for (j = 0; j <= text[i] ; j++) {
+			for (j = 0; j < text[i] ; j++) {
 				tmp = tmp->next;
 			}
 			res[idx++] = tmp->c;
