@@ -14,9 +14,21 @@ int main(void)
 	/*-------------------
 	launch your test here
 	--------------------*/
-	//struct s_dict *dict;
-	//
-	//
+	struct s_dict *dict = dictInit(94870);
+	for (int i = 0; i < 94870; i++) {
+		dictInsert(dict, arts[i]->name, arts[i]);
+	}
+	for (int i = 0; i < 94870; i++) {
+		int val = searchPrice(dict, arts[i]->name);
+		if (val != arts[i]->price && strcmp(arts[i]->name, ")")) {
+			printf("%s    =>    %d: ", arts[i]->name, arts[i]->price);
+			printf("\033[0;31mERROR\n\033[0m");
+			exit(1);
+		} else {
+			printf("%s    =>    %d: ", arts[i]->name, arts[i]->price);
+			printf("\033[0;32mVALIDATED\n\033[0m");	
+		}
+	}
 
 	return (0);
 }
