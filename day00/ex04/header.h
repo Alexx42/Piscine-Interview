@@ -1,6 +1,7 @@
 #ifndef HEADER_H
 # define HEADER_H
-
+# define d 256
+# define q 101
 /*--------------------------------
   !! required structure
   --------------------------------*/
@@ -23,6 +24,7 @@ char *readFile(void);
 /*--------------------------------
   &  your own other function
   --------------------------------*/
+int rabinKarpAlgo(char *bible, char *jesus);
 
 
 #endif

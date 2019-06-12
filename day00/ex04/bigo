@@ -1,0 +1,4 @@
+preprocessing: time: O(m), space: O(1)
+searching: time: O(mn), space: O(1)
+O(n + m): runtime
+space O(1)

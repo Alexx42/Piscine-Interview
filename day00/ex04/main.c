@@ -15,7 +15,8 @@ int main(void)
 	/*-------------------
 	launch your test here
 	--------------------*/
-	printf("%d\n", howManyJesus(book, "God"));
+	printf("lord = %d\n", howManyJesus(book, "Lord"));
+	printf("god = %d\n", howManyJesus(book, "God"));
 
 	return (0);
 }
