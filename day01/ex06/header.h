@@ -9,6 +9,15 @@ struct s_city {
 	struct s_city *next;
 };
 
+struct s_item {
+	char *str;
+	struct s_item *next;
+};
+
+struct s_stack {
+	struct s_item *item;
+};
+
 /*--------------------------------
   :) function you must implement
   --------------------------------*/
@@ -23,6 +32,9 @@ struct s_city *getCities(void);
 /*--------------------------------
   &  your own other function
   --------------------------------*/
+struct s_stack *initStack();
+void push(struct s_stack *stack, char *name);
+char *pop(struct s_stack *stack);
 
 
 #endif

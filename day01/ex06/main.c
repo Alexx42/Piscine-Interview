@@ -14,9 +14,9 @@ int main(void)
 	/*-------------------
 	launch your test here
 	--------------------*/
-	//printf("%s\n", NthLastCity(city, 2)); //should return 'Kobylin'
-	//printf("%s\n", NthLastCity(city, 10)); //should return 'Jastrzebie-Zdroj'
-
+	printf("%s\n", NthLastCity(city, 2)); //should return 'Kobylin'
+	printf("%s\n", NthLastCity(city, 10)); //should return 'Jastrzebie-Zdroj'
+	printf("%s\n", NthLastCity(city, 17)); //should return 'Czarna Biaoostocka'
 	return (0);
 }
 
