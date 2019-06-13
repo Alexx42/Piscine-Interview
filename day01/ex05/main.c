@@ -7,13 +7,19 @@
 
 int main(void)
 {
-	//struct s_tank *tank = initTank();
+	struct s_tank *tank = initTank();
 
 	/*-------------------
 	launch your test here
 	--------------------*/
-	//tankPush(tank, 10);
-	//tankPush(tank, 50);
+	tankPush(tank, 990);
+	tankPush(tank, 100);
+	tankPush(tank, 10);
+	tankPop(tank);
+	tankPop(tank);
+	tankPush(tank, 10);
+	tankPush(tank, 100);
+	printStack(tank);
 	return (0);
 }
 

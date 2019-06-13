@@ -1,0 +1,2 @@
+TIME: O(1): only moving pointers
+SPACE: O(1): Creating one stack by element
