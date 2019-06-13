@@ -11,7 +11,20 @@ int main(void)
 	/*-------------------
 	launch your test here
 	--------------------*/
-
+	struct s_queue *q = queueInit();
+	printf("is empty = %d\n", isEmpty(q));
+	enqueue(q, "Hello");
+	enqueue(q, "How");
+	enqueue(q, "Are");
+	enqueue(q, "You");
+	enqueue(q, "?");
+	printf("is empty = %d\n", isEmpty(q));
+	for (int i = 0; i < 5; i++)
+	{
+		printf("%s\n", peek(q));
+		printf("%s\n", dequeue(q));
+	}
+		printf("is empty = %d\n", isEmpty(q));
 	return (0);
 }
 
