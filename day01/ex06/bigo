@@ -1,2 +1,9 @@
+STACK:
+
 TIME: O(n) -> where n is the number of elements
 SPACE: O(n) -> Where n is the number of elements
+
+RECURSION:
+
+TIME: O(n) ---------------------
+SPACE: O(log(n)) -> Recursion
