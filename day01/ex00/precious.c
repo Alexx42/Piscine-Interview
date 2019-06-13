@@ -20,14 +20,14 @@ static void appendList(struct s_node **node, char c) {
 	last->next = newNode;
 }
 
-static void printList(struct s_node *lst) {
-	struct s_node *tmp = lst;
-	while (tmp && tmp->next != lst) {
-		printf("%c", tmp->c);
-		tmp = tmp->next;
-	}
-	printf("%c\n", tmp->c);
-}
+// static void printList(struct s_node *lst) {
+// 	struct s_node *tmp = lst;
+// 	while (tmp && tmp->next != lst) {
+// 		printf("%c", tmp->c);
+// 		tmp = tmp->next;
+// 	}
+// 	printf("%c\n", tmp->c);
+// }
 
 char *precious(int *text, int size) {
 	struct s_node *lst = NULL;
@@ -37,8 +37,8 @@ char *precious(int *text, int size) {
 		appendList(&lst, CS[i]);
 	}
 	struct s_node *tmp = lst;
-	for (size_t i = 0; i < size; i++) {
-		size_t j;
+	for (int i = 0; i < size; i++) {
+		int j;
 		if (text[i] < 0) {
 			for (j = 0; j < -text[i]; j++) {
 				tmp = tmp->prev;
