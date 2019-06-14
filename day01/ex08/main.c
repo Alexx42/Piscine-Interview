@@ -16,7 +16,7 @@ int main(void)
 	/*-------------------
 	launch your test here
 	--------------------*/
-	
+	printf("Minimum moves = %d\n", minimumMoves(node));	
 	return (0);
 }
 
@@ -221,14 +221,14 @@ struct s_node *getBoardFromFile(char *file)
 			getAccess(branches, n, pos, lines[i + 1]);
 		}
 	}
-	for (int i = 0; i < n; i++){
-		struct s_node *tmp = branches[i];
-		while (tmp){
-			printf("%d %s (%d) -> ", tmp->value, (tmp->isFinal) ? "FINAL" : "", (tmp->random) ? tmp->random->value : 0);
-			tmp = tmp->next;
-		}
-		printf("END\n");
-	}
+	// for (int i = 0; i < n; i++){
+	// 	struct s_node *tmp = branches[i];
+	// 	while (tmp){
+	// 		printf("%d %s (%d) -> ", tmp->value, (tmp->isFinal) ? "FINAL" : "", (tmp->random) ? tmp->random->value : 0);
+	// 		tmp = tmp->next;
+	// 	}
+	// 	printf("END\n");
+	// }
 	return (branches[0]);
 }
 
