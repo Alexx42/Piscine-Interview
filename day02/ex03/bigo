@@ -1,0 +1,2 @@
+TIME:-> O(nlog(n)) : where n is the number of elements
+SPACE:-> O(n): Creating subarrays in the merge, and recursion but since O(n) > O(log(n)) => O(n)
