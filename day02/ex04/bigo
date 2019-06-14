@@ -1,0 +1,5 @@
+TIME: O(n + k)
+SPACE: O(n + k)
+
+n is the number of elements
+k is the number of range, here 15
