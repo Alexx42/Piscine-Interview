@@ -33,7 +33,8 @@ int main(int ac, char **av)
 	printf("Sort worked.\n");
 	info = getInfo(av[1]);
 	potentialCriminals = findPotentialCriminals(criminals, info);
-	// printCriminals(potentialCriminals);
+	if (potentialCriminals)
+		printCriminals(potentialCriminals);
 
 	return (0);
 }

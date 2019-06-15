@@ -1,0 +1,8 @@
+SORT:
+	TIME: O(n + k) -> where n is the number of elements, and k the longest digit
+	SPACE: O(n) -> where n is the number of elements
+
+
+FIND:
+	TIME: O(log(n)) -> where n is the number of elements
+	SPACE: O(a) -> where a is the number of elements found
