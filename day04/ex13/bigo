@@ -1,0 +1,2 @@
+TIME o(n) where n is the position of the last 1
+SPACE: O(1)
