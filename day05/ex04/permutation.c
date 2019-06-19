@@ -25,5 +25,7 @@ static void printPermutationRec(char *str, int l, int r)
 
 void		printPermutations(char *str)
 {
+	if (!str)
+		return ;
 	printPermutationRec(str, 0, strlen(str) - 1);
 }
