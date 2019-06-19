@@ -20,13 +20,11 @@ static void swap(char *s1, char *s2)
 static void printPermutationRec(char *str, int l, int r, struct s_dict *dict)
 {
 	if (l == r)
-	{
 		if (dictSearch(dict, str) == -1)
 		{
 			dictInsert(dict, str, 0);
 			printf("%s\n", str);
 		}
-	}
 	for (int i = l; i <= r; i++)
 	{
 		swap(str + i, str +l);
@@ -37,8 +35,8 @@ static void printPermutationRec(char *str, int l, int r, struct s_dict *dict)
 
 void printUniquePermutations(char *str)
 {
-	struct s_dict		*dict = dictInit(factorial(strlen(str)));
-	if (!str)
-		return ;
-	printPermutationRec(str, 0, strlen(str) - 1, dict);
+	struct s_dict		*dict;
+	
+	str ? dict = dictInit(factorial(strlen(str))) : NULL;
+	str ? printPermutationRec(str, 0, strlen(str) - 1, dict) : 0;
 }
