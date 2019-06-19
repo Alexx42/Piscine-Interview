@@ -1,8 +1,9 @@
 #include "header.h"
+#include <string.h>
 
 void optimizedBestPriceRec(double *prices, int size, int total, double price, double *res)
 {
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i <= total; i++)
     {
         if (i == size)
         {
@@ -23,7 +24,9 @@ void optimizedBestPriceRec(double *prices, int size, int total, double price, do
 }
 
 double optimizedBestPrice(int pizzaSize, double *prices) {
-    double res[100] = {0};
+    double res[pizzaSize + 1];
+
+    memset(res, 0, (pizzaSize + 1) * sizeof(double));
     optimizedBestPriceRec(prices, 0, pizzaSize, 0, res);
     return (res[pizzaSize]);
 }
