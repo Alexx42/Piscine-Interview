@@ -1,0 +1,2 @@
+O(n^2): where n is the number of locations
+O(1)
