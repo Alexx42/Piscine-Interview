@@ -1,2 +1,2 @@
-O(n) -> where n is the number of game
-O(2^n) -> recursion
+O(2^n) -> where n is the number of game
+O(n) -> recursion
